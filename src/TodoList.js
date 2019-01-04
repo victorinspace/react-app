@@ -1,18 +1,17 @@
-import React, { Component } from 'react'
-
+import React, { Component } from "react";
 class TodoList extends Component {
   render() {
     return (
       <div className="todoListMain">
         <div className="header">
-          <form>
+          <form onSubmit={this.props.addItem}>
             <input placeholder="Task" />
-            <button type="submit"> Add Task </button>
+            <button type="submit">Add Task</button>
           </form>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default TodoList
+export default TodoList;
