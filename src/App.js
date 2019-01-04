@@ -14,11 +14,31 @@ class App extends Component {
   }
 
   handleInput = e => {
+    const itemText = e.target.value
+    const currentItem = { 
+      text: itemText,
+      key: Date.now()
+    }
+    this.setState({
+      currentItem
+    })
     console.log('Hello Input')
   }
 
   addItem = e => {
     e.preventDefault()
+    const newItem = this.state.currentItem
+    if (newItem.text !== "") {
+      console.log(newItem)
+      const items = [...this.state.items, newItem]
+      this.setState({
+        items: items, 
+        currentItem: {
+          text: "",
+          key: ""
+        }
+      })
+    }
     console.log('Hello Add Item')
   }
 
