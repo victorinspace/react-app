@@ -17,14 +17,20 @@ class App extends Component {
     console.log('Hello Input')
   }
 
-  addItem = () => {
+  addItem = e => {
+    e.preventDefault()
     console.log('Hello Add Item')
   }
-  
+
   render() {
     return (
       <div className="App">
-        <TodoList addItem={this.addItem} />
+        <TodoList 
+          addItem={this.addItem} 
+          inputElement={this.inputElement}
+          handleInput={this.handleInput}
+          currentItem={this.state.currentItem}
+        />
       </div>
     );
   }
