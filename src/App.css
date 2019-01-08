@@ -16,12 +16,15 @@ body {
 }
 
 .todoListMain .header input {
-  border: 2px solid #FFF;
   max-width: 250px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
-.todoListMain .header button {
-  margin: 10px 10px 10px 5px;
+@media only screen and (max-width: 500px) {
+  .todoListMain .header button {
+    margin-bottom: 55px;
+  }
 }
 
 .todoListMain .theList {

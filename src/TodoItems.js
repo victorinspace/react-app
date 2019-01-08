@@ -15,7 +15,7 @@ class TodoItems extends Component {
 
     return <div>
         <ul className="nes-list is-disc">{listItems}</ul>
-        <p>Tap to remove.</p>
+        <p>[Tap to remove.]</p>
       </div>;
   }
 }
