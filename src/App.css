@@ -1,7 +1,7 @@
 body {
   font-family: 'Press Start 2P', cursive, sans-serif;
   padding: 50px;
-  background-color: #66CCFF;
+  background-color: #fff;
 }
 
 #container {
@@ -10,18 +10,18 @@ body {
   flex-direction: column-reverse;
 }
 
+.todoListMain {
+  min-width: 80%;
+  margin: 0 auto;
+}
+
 .todoListMain .header input {
-  padding: 10px;
-  font-size: 16px;
   border: 2px solid #FFF;
-  width: 165px;
+  max-width: 250px;
 }
 
 .todoListMain .header button {
-  padding: 10px;
-  font-size: 16px;
-  margin: 10px;
-  margin-right: 0px;
+  margin: 10px 10px 10px 5px;
 }
 
 .todoListMain .theList {
@@ -35,8 +35,6 @@ body {
   color: #333;
   background-color: rgba(255, 255, 255, .5);
   padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 5px;
   list-style: none;
 }
 
