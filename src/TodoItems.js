@@ -13,7 +13,10 @@ class TodoItems extends Component {
     const todoEntries = this.props.entries
     const listItems = todoEntries.map(this.createTasks)
 
-    return <ul className="theList">{listItems}</ul>
+    return <div>
+        <ul className="nes-list is-disc">{listItems}</ul>
+        <p>[Tap to remove.]</p>
+      </div>;
   }
 }
 

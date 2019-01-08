@@ -9,15 +9,17 @@ class TodoList extends Component {
     return (
       <div className="todoListMain">
         <div className="header">
-          <h1>To Do List</h1>
+          <h1>What 2 Do?</h1>
           <form onSubmit={this.props.addItem}>
             <input
               placeholder="Task"
+              type="text"
+              className="nes-input"
               ref={this.props.inputElement}
               value={this.props.currentItem.text}
               onChange={this.props.handleInput}
             />
-            <button type="submit">Add Task</button>
+            <button className="nes-btn is-primary" type="submit">Add Task</button>
           </form>
         </div>
       </div>
