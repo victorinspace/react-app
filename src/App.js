@@ -4,6 +4,7 @@ import TodoItems from "./TodoItems"
 import "./App.css";
 
 class App extends Component {
+
   inputElement = React.createRef()
   
   constructor() {
@@ -18,6 +19,7 @@ class App extends Component {
   }
 
   handleInput = e => {
+
     const itemText = e.target.value
     const currentItem = { 
       text: itemText,
@@ -30,6 +32,7 @@ class App extends Component {
   }
 
   addItem = e => {
+
     e.preventDefault()
     const newItem = this.state.currentItem
     if (newItem.text !== "") {
@@ -56,6 +59,7 @@ class App extends Component {
   }
 
   render() {
+
     return (
       <div className="App">
         <TodoList 
